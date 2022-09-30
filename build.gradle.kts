@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "org.newbalancer"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.2-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -35,9 +35,11 @@ tasks.test {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "org.newbalancer"
+            // groupId = "org.newbalancer"
+            group = project.group.toString()
             artifactId = "mockexpansion"
-            version = "0.0.1-SNAPSHOT"
+            // version = "0.0.2-SNAPSHOT"
+            version = project.version.toString()
             from(components["java"])
         }
     }
