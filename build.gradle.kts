@@ -37,7 +37,7 @@ publishing {
         create<MavenPublication>("maven") {
             // groupId = "org.newbalancer"
             group = project.group.toString()
-            artifactId = "mockexpansion"
+            artifactId = "mock-expansion-util"
             // version = "0.0.2-SNAPSHOT"
             version = project.version.toString()
             from(components["java"])
