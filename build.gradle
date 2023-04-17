@@ -1,12 +1,26 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
-group = 'org.example'
+group = 'org.jgspark'
 version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+
+            groupId = 'org.jgspark'
+            artifactId = 'reader'
+            version = '1.0-SNAPSHOT'
+
+            from components.java
+        }
+    }
 }
 
 dependencies {
