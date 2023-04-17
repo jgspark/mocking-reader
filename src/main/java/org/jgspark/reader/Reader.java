@@ -1,8 +1,6 @@
 package org.jgspark.reader;
 
-public class Reader {
+public interface Reader {
 
-    private String test() {
-        return "test";
-    }
+    <T> T readJson(Class<T> type);
 }
