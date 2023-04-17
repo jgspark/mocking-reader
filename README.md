@@ -1,5 +1,6 @@
-# mocking-reader
-mock-expansion-util
+# Spring Boot Mock Data Json Reader
+
+Spring Boot Mock Data Json Reader
 
 
 ```
@@ -11,7 +12,7 @@ repositories {
 
 dependencies {
     // mocking reader add
-    testImplementation 'com.github.jgspark:mocking-reader:0.0.4-SNAPSHOT'
+    testImplementation 'com.github.jgspark:mocking-reader:0.0.5-SNAPSHOT'
 }
 
 ```
