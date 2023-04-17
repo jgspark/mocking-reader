@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 
 public class SpringReader implements Reader {
-    
+
     private final String path;
 
     public SpringReader(String path) {
