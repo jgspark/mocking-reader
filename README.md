@@ -12,7 +12,7 @@ repositories {
 
 dependencies {
     // mocking reader add
-    testImplementation 'com.github.jgspark:mocking-reader:0.0.5-SNAPSHOT'
+    testImplementation 'com.github.jgspark:mocking-reader:0.0.6-SNAPSHOT'
 }
 
 ```
